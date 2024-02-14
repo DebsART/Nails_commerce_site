@@ -1,0 +1,101 @@
+<!-------w---------
+    
+    Project 3 dom
+     Name: Deborah Ekpeneidua
+    Date:dec 19, 2023
+    Description: project 3 dom: contact html
+
+------------------>
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>CONTACT PAGE</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@300;400;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css" >
+		<script src="js.js" defer></script>
+	</head>
+	<body>
+		<div class="navTop">
+			<nav id="navTopOne">
+				<ul>
+					<li><a href="product.html"> Shop</a></li>
+					<li><a href="index.html#announcement"> New in</a></li>
+					<li><a href="contact.html"> Contact us</a></li>
+					<li><a href="index.html#aboutImg"> About</a></li>
+				</ul>
+			</nav>
+
+			<div id="navTopTwo">
+				<h5 id="cart"><a href="#">Cart</a></h5>
+				<h5 id="signIn"><a href="#">Sign in</a></h5>		
+			</div>
+		</div>
+
+		<div id="border"></div>
+
+		<form>
+			<fieldset>
+				<legend>Contact Us</legend>
+
+				<ul>
+					<li>
+						<label for="fullName">Full Name:</label>
+						<input type="text" id="fullName" name="fullName" autofocus required >
+						<div class="error" id="fullName_error" >
+							Please enter your full name
+						</div>
+					</li>
+
+					<li>
+						<label for="phNum">Phone Number:</label>
+						<input type="number" id="phNum" name="phNum" required >
+						<div class="error" id="phNum_error">
+							Please enter your phone number
+						</div>
+					</li>
+
+					<li>
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required >
+						<div class="error " id="email_error">
+							Please enter your email
+						</div>
+					</li>
+
+					<li><label for="comment">Comment:</label>
+						<input type="text" id="comment" name="comment" required size="100" maxlength="100" >
+						<div class="error" id="comment_error">
+							Please enter your comments or questions.
+						</div>
+					</li>
+				</ul>
+
+				<div class="formButtons">
+					<button type="submit" formaction="index.html" id="submitButton">Submit</button>
+
+					<button type="reset" id="resetButton">Reset</button>
+				</div>
+			</fieldset>
+		</form>
+
+		<div id="backgroundTwo">
+			<div id="overlayTwo">
+				<h2><a href="#"> BROWSE OUR COLLECTIONS</a></h2>
+				<p><i>Nail Vogue, a class of its own</i></p>
+			</div>
+		</div>
+
+	<footer>
+		<ul>
+			<li><a href="contact.html"> Contact us</a></li>
+			<li><a href="product.html">shop</a></li>
+			<li><a href="#">socials</a></li>
+			<li><a href="#">Sign in</a></li>
+		</ul>
+
+	</footer>
+
+	</body>
+	</html>
